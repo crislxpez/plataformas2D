@@ -1,0 +1,90 @@
+[gd_scene load_steps=5 format=3 uid="uid://cklx513a4o87d"]
+
+[ext_resource type="Theme" uid="uid://cntyse6878fqc" path="res://Assets/GUI/theme_gui.theme" id="1_u3og8"]
+[ext_resource type="Script" path="res://Scenes/menu_controles.gd" id="2_j0n1q"]
+[ext_resource type="Texture2D" uid="uid://b7pdye1g31yb1" path="res://Assets/GUI/artistic-pixel-art-hd-wallpaper-preview.jpg" id="3_0oy76"]
+[ext_resource type="AudioStream" uid="uid://bt0bxqaajqeq2" path="res://Assets/Audio/Of Far Different Nature - 8-Bit Hero Quest (CC-BY).ogg" id="4_2ep3x"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_u3og8")
+script = ExtResource("2_j0n1q")
+
+[node name="Cover" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_0oy76")
+expand_mode = 2
+
+[node name="Container" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Buttons" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = 54.0
+offset_right = 32.0
+offset_bottom = 74.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+
+[node name="Exit" type="Button" parent="Buttons"]
+layout_mode = 2
+text = "SALIR"
+flat = true
+
+[node name="Audio" type="Node" parent="."]
+
+[node name="Background" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource("4_2ep3x")
+volume_db = -16.4
+autoplay = true
+
+[node name="Titulo" type="Label" parent="."]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 16.0
+offset_right = 232.0
+offset_bottom = 41.0
+theme_override_colors/font_color = Color(0.567388, 0.147981, 0.388852, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "CONTROLES"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 72.0
+offset_right = 335.0
+offset_bottom = 103.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Utiliza las flechas de dirección para moverte 
+por el mapa y la barra espaciadora para saltar"
+
+[connection signal="pressed" from="Buttons/Exit" to="." method="_on_exit_pressed"]

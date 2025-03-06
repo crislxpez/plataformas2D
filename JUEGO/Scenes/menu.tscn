@@ -1,0 +1,93 @@
+[gd_scene load_steps=5 format=3 uid="uid://ervcg3c0cycx"]
+
+[ext_resource type="Theme" uid="uid://cntyse6878fqc" path="res://Assets/GUI/theme_gui.theme" id="1_scpqg"]
+[ext_resource type="Script" path="res://Assets/Scripts/menu.gd" id="2_ejtk0"]
+[ext_resource type="Texture2D" uid="uid://diis28c4h48o8" path="res://Assets/GUI/fondoMainPage.jpg" id="3_kyu5s"]
+[ext_resource type="AudioStream" uid="uid://bt0bxqaajqeq2" path="res://Assets/Audio/Of Far Different Nature - 8-Bit Hero Quest (CC-BY).ogg" id="4_n7rss"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_scpqg")
+script = ExtResource("2_ejtk0")
+
+[node name="Cover" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_kyu5s")
+expand_mode = 2
+
+[node name="Container" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Buttons" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 32.0
+offset_top = -2.0
+offset_right = 104.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+
+[node name="Start" type="Button" parent="Buttons"]
+layout_mode = 2
+text = "INICIAR"
+flat = true
+metadata/_edit_lock_ = true
+
+[node name="Exit" type="Button" parent="Buttons"]
+layout_mode = 2
+text = "SALIR"
+flat = true
+metadata/_edit_lock_ = true
+
+[node name="Controles" type="Button" parent="Buttons"]
+layout_mode = 2
+text = "CONTROLES"
+
+[node name="Audio" type="Node" parent="."]
+
+[node name="Background" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource("4_n7rss")
+volume_db = -16.4
+autoplay = true
+
+[node name="Titulo" type="Label" parent="."]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 8.0
+offset_right = 312.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(1, 0.587505, 0.193497, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+text = "BERIE'S
+ADVENTURE"
+
+[connection signal="pressed" from="Buttons/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Buttons/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Buttons/Controles" to="." method="_on_controles_pressed"]

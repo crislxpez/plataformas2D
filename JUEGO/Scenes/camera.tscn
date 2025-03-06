@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://wvd8g62w37l2"]
+
+[ext_resource type="Script" path="res://Assets/Scripts/camera.gd" id="1_gitys"]
+
+[node name="Camera" type="Camera2D"]
+light_mask = 31
+visibility_layer = 31
+offset = Vector2(0, -48)
+position_smoothing_enabled = true
+drag_vertical_enabled = true
+drag_top_margin = 1.0
+drag_bottom_margin = 0.0
+script = ExtResource("1_gitys")

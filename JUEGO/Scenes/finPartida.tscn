@@ -1,0 +1,77 @@
+[gd_scene load_steps=4 format=3 uid="uid://u1qct24p6bie"]
+
+[ext_resource type="Script" path="res://Scenes/fin_partida.gd" id="1_lt8sw"]
+[ext_resource type="Theme" uid="uid://cntyse6878fqc" path="res://Assets/GUI/theme_gui.theme" id="2_smy6q"]
+[ext_resource type="AudioStream" uid="uid://dvlvx30fvwex2" path="res://Assets/Audio/GameOver.ogg" id="3_34rbk"]
+
+[node name="GUI" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_lt8sw")
+
+[node name="Container" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_smy6q")
+
+[node name="Label" type="Label" parent="Container"]
+layout_mode = 2
+size_flags_vertical = 0
+text = "SCORE: 0000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameOver" type="ColorRect" parent="."]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_smy6q")
+color = Color(2.40654e-07, 0.626152, 0.505012, 0.705882)
+
+[node name="Container" type="VBoxContainer" parent="GameOver"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -17.5
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="Label" type="Label" parent="GameOver/Container"]
+layout_mode = 2
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 34
+text = "HAS
+GANADO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Buttons" type="HBoxContainer" parent="GameOver/Container"]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Restart" type="Button" parent="GameOver/Container/Buttons"]
+layout_mode = 2
+text = "REINICIAR"
+
+[node name="Exit" type="Button" parent="GameOver/Container/Buttons"]
+layout_mode = 2
+text = "SALIR"
+
+[node name="Sound" type="AudioStreamPlayer" parent="GameOver"]
+stream = ExtResource("3_34rbk")
+volume_db = -6.4
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pressed" from="GameOver/Container/Buttons/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="GameOver/Container/Buttons/Exit" to="." method="_on_exit_pressed"]

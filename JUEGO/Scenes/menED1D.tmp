@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://v6vv37ym3nbv"]
+
+[ext_resource type="Theme" uid="uid://cntyse6878fqc" path="res://Assets/GUI/theme_gui.theme" id="1_fyhrp"]
+[ext_resource type="Script" path="res://Assets/Scripts/menu_pause.gd" id="2_e4j3p"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_fyhrp")
+script = ExtResource("2_e4j3p")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 184.0
+color = Color(0, 0.556863, 0.690196, 0.227451)
+
+[node name="Buttons" type="VBoxContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -4.0
+offset_right = 48.0
+offset_bottom = 76.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+
+[node name="Reanudar" type="Button" parent="ColorRect/Buttons"]
+layout_mode = 2
+text = "REANUDAR"
+
+[node name="Restart" type="Button" parent="ColorRect/Buttons"]
+layout_mode = 2
+text = "REINICIAR
+"
+flat = true
+
+[node name="Exit" type="Button" parent="ColorRect/Buttons"]
+layout_mode = 2
+text = "SALIR"
+flat = true
+
+[connection signal="pressed" from="ColorRect/Buttons/Reanudar" to="." method="_on_reanudar_pressed"]
+[connection signal="pressed" from="ColorRect/Buttons/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="ColorRect/Buttons/Exit" to="." method="_on_exit_pressed"]

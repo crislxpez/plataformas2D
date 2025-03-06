@@ -1,0 +1,13 @@
+res://Scenes/menuPause.tscn
+res://Assets/GUI/theme_gui.theme
+res://Assets/Scripts/coin.gd
+res://Scenes/finPartida.tscn
+res://Scenes/level2.tscn
+res://Scenes/level.tscn
+res://Scenes/gui.tscn
+res://Scenes/menuControles2.tscn
+res://Scenes/spike.tscn
+res://Scenes/player.tscn
+res://Scenes/menu.tscn
+res://Assets/Scripts/menu_pause.gd
+res://Assets/Scripts/level.gd
