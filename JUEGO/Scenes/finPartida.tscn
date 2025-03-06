@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scenes/fin_partida.gd" id="1_lt8sw"]
 [ext_resource type="Theme" uid="uid://cntyse6878fqc" path="res://Assets/GUI/theme_gui.theme" id="2_smy6q"]
-[ext_resource type="AudioStream" uid="uid://dvlvx30fvwex2" path="res://Assets/Audio/GameOver.ogg" id="3_34rbk"]
+[ext_resource type="AudioStream" uid="uid://d3bsgy5mcugue" path="res://Assets/Audio/goodresult-82807.mp3" id="3_y8npj"]
 
 [node name="GUI" type="CanvasLayer"]
 process_mode = 3
@@ -69,7 +69,7 @@ layout_mode = 2
 text = "SALIR"
 
 [node name="Sound" type="AudioStreamPlayer" parent="GameOver"]
-stream = ExtResource("3_34rbk")
+stream = ExtResource("3_y8npj")
 volume_db = -6.4
 
 [connection signal="ready" from="." to="." method="_on_ready"]

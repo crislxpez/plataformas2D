@@ -1,10 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1741262186
+::res://::1741277069
 icon.svg::CompressedTexture2D::531693765560262068::1740310166::1740310219::1::::<><>::
 ::res://Assets/::1740310165
-::res://Assets/Audio/::1740310218
+::res://Assets/Audio/::1741275460
 Coin.ogg::AudioStreamOggVorbis::8092606214911205477::1740310162::1740310218::1::::<><>::
 GameOver.ogg::AudioStreamOggVorbis::8657253562410573849::1740310162::1740310218::1::::<><>::
+goodresult-82807.mp3::AudioStreamMP3::9127718978784722820::1741275410::1741275460::1::::<><>::
 Hit.ogg::AudioStreamOggVorbis::1777080922044371992::1740310162::1740310218::1::::<><>::
 Jump.ogg::AudioStreamOggVorbis::369233232418143262::1740310163::1740310218::1::::<><>::
 Of Far Different Nature - 8-Bit Hero Quest (CC-BY).ogg::AudioStreamOggVorbis::3771720787306053211::1740310163::1740310218::1::::<><>::
@@ -60,7 +61,7 @@ trap_spike.png::CompressedTexture2D::7440213458643271091::1740310165::1740310218
 vegetation_grass_rock_trunk.png::CompressedTexture2D::526315284995923231::1740310165::1740310218::1::::<><>::
 vegetation_grass_small.png::CompressedTexture2D::6135682309119406018::1740310165::1740310218::1::::<><>::
 vegetation_tree_palm.png::CompressedTexture2D::5747005932863669995::1740310165::1740310219::1::::<><>::
-::res://Assets/GUI/::1741259759
+::res://Assets/GUI/::1741275268
 artistic-pixel-art-hd-wallpaper-preview.jpg::CompressedTexture2D::4663654607022445932::1740346540::1740346542::1::::<><>::
 cover.jpg::CompressedTexture2D::6231756590025448406::1740310165::1740310219::1::::<><>::
 cursor.png::CompressedTexture2D::8282917217605562489::1740310165::1740310218::1::::<><>::
@@ -69,34 +70,34 @@ fondoMainPage.jpg::CompressedTexture2D::7738430682209592697::1740341973::1740341
 NokiaCellphoneFC.ttf::FontFile::2677326762109716322::1740310165::1740310218::1::::<><>::
 sonidoActivado.png::CompressedTexture2D::2595625642537973178::1740348236::1740348387::1::::<><>::
 sonidoDesactivado.png::CompressedTexture2D::608720693500303075::1740348242::1740348387::1::::<><>::
-theme_gui.theme::Theme::5726009123650214686::1741259759::0::1::::<><>::uid://bee6ge1xejx6a::::res://Assets/GUI/NokiaCellphoneFC.ttf
-::res://Assets/Scripts/::1741262162
+theme_gui.theme::Theme::5726009123650214686::1741275268::0::1::::<><>::uid://bee6ge1xejx6a::::res://Assets/GUI/NokiaCellphoneFC.ttf
+::res://Assets/Scripts/::1741277037
 bandera.gd::GDScript::-1::1740425456::0::1::::<>Area2D<>::
 camera.gd::GDScript::-1::1740310165::0::1::::<>Camera2D<>::
-coin.gd::GDScript::-1::1741259759::0::1::::<>Area2D<>::
+coin.gd::GDScript::-1::1741275268::0::1::::<>Area2D<>::
 enemy.gd::GDScript::-1::1740310165::0::1::::Enemy<>CharacterBody2D<>::
 global.gd::GDScript::-1::1740310165::0::1::::<>Node<>::
 gui.gd::GDScript::-1::1741188375::0::1::::<>CanvasLayer<>::
 level.gd::GDScript::-1::1741257768::0::1::::<>Node2D<>::
 menu.gd::GDScript::-1::1741262162::0::1::::<>Control<>::
 menu_pause.gd::GDScript::-1::1741258948::0::1::::<>CanvasLayer<>::
-player.gd::GDScript::-1::1740310166::0::1::::Player<>CharacterBody2D<>::
+player.gd::GDScript::-1::1741277037::0::1::::Player<>CharacterBody2D<>::
 spike.gd::GDScript::-1::1740310166::0::1::::<>Area2D<>::
-::res://Scenes/::1741262160
+::res://Scenes/::1741277041
 bandera.tscn::PackedScene::471322386220671109::1740425797::0::1::::<><>::res://Assets/Scripts/bandera.gd<>uid://0bmqfb6nsaks::::res://Assets/Environment/race-flag-pixel-art-style_475147-1029-removebg-preview.png
 botonSonido.gd::GDScript::-1::1740348313::0::1::::<>TextureButton<>::
 camera.tscn::PackedScene::1587747939335460209::1740425796::0::1::::<><>::res://Assets/Scripts/camera.gd
 coin2.tscn::PackedScene::2170569305700588921::1740425796::0::1::::<><>::res://Assets/Scripts/coin.gd<>uid://h37j8xr3bnbs::::res://Assets/Collectibles/vfx_effect_coin.png<>uid://dnkebotmgmkq4::::res://Assets/Audio/Coin.ogg<>uid://dys51qjre68xg::::res://Assets/Collectibles/collectibles_coin_silver.png
 coin.tscn::PackedScene::3827793926344050448::1740425797::0::1::::<><>::res://Assets/Scripts/coin.gd<>uid://h37j8xr3bnbs::::res://Assets/Collectibles/vfx_effect_coin.png<>uid://b2u4e6twveuvs::::res://Assets/Collectibles/collectibles_coin_bronze1.png<>uid://dnkebotmgmkq4::::res://Assets/Audio/Coin.ogg
 enemy.tscn::PackedScene::513984847160734399::1740425796::0::1::::<><>::res://Assets/Scripts/enemy.gd<>uid://0ie0xfdnqvd5::::res://Assets/Characters/Enemy/character_enemy_sandbug_walk.png<>uid://dve3npgpehfrg::::res://Assets/Characters/Enemy/character_enemy_sandbug_death.png<>uid://cn2f2c6fbkkg1::::res://Assets/Collectibles/vfx_effect_consume.png
-finPartida.tscn::PackedScene::1458426778830539232::1741262139::0::1::::<><>::res://Scenes/fin_partida.gd<>uid://cntyse6878fqc::::res://Assets/GUI/theme_gui.theme<>uid://dvlvx30fvwex2::::res://Assets/Audio/GameOver.ogg
-fin_partida.gd::GDScript::-1::1741189513::0::1::::<>CanvasLayer<>::
-gui.tscn::PackedScene::2448434286499647802::1741262139::0::1::::<><>::res://Assets/Scripts/gui.gd<>uid://cntyse6878fqc::::res://Assets/GUI/theme_gui.theme<>uid://dvlvx30fvwex2::::res://Assets/Audio/GameOver.ogg
-level2.tscn::PackedScene::1704191273791961260::1741262139::0::1::::<><>::res://Assets/Scripts/level.gd<>uid://ba5bmcmb1peso::::res://Scenes/gui.tscn<>uid://wvd8g62w37l2::::res://Scenes/camera.tscn<>uid://jurj157lldfy::::res://Assets/Environment/background_night.png<>uid://ibxmse8hstd6::::res://Assets/Environment/tilemap.png<>uid://hq7loigd8da2::::res://Assets/Environment/vegetation_grass_rock_trunk.png<>uid://ctof15vg0y1w5::::res://Assets/Environment/vegetation_grass_small.png<>uid://cn45l3mnm53ql::::res://Assets/Environment/vegetation_tree_palm.png<>uid://i7586lj6ve84::::res://Assets/Audio/Of Far Different Nature - EZDNB2 (CC-BY).ogg<>uid://bushha75kjen5::::res://Scenes/coin.tscn<>uid://gx260hy8f6wb::::res://Scenes/spike.tscn<>uid://hk8ixf3gcl0r::::res://Scenes/enemy.tscn<>uid://dscskf7pnqab::::res://Scenes/player.tscn<>uid://56o7u86tqjw0::::res://Scenes/coin2.tscn<>uid://gyku1epqbflt::::res://Scenes/bandera.tscn<>uid://v6vv37ym3nbv::::res://Scenes/menuPause.tscn
-level.tscn::PackedScene::7147999071006798111::1741262139::0::1::::<><>::res://Assets/Scripts/level.gd<>uid://ba5bmcmb1peso::::res://Scenes/gui.tscn<>uid://wvd8g62w37l2::::res://Scenes/camera.tscn<>uid://c24pbo6du8q2h::::res://Assets/Environment/background.png<>uid://ibxmse8hstd6::::res://Assets/Environment/tilemap.png<>uid://hq7loigd8da2::::res://Assets/Environment/vegetation_grass_rock_trunk.png<>uid://ctof15vg0y1w5::::res://Assets/Environment/vegetation_grass_small.png<>uid://cn45l3mnm53ql::::res://Assets/Environment/vegetation_tree_palm.png<>uid://dscskf7pnqab::::res://Scenes/player.tscn<>uid://bushha75kjen5::::res://Scenes/coin.tscn<>uid://gx260hy8f6wb::::res://Scenes/spike.tscn<>uid://i7586lj6ve84::::res://Assets/Audio/Of Far Different Nature - EZDNB2 (CC-BY).ogg<>uid://hk8ixf3gcl0r::::res://Scenes/enemy.tscn<>uid://gyku1epqbflt::::res://Scenes/bandera.tscn<>uid://v6vv37ym3nbv::::res://Scenes/menuPause.tscn
-menu.tscn::PackedScene::317128783326061467::1741262140::0::1::::<><>::uid://cntyse6878fqc::::res://Assets/GUI/theme_gui.theme<>res://Assets/Scripts/menu.gd<>uid://diis28c4h48o8::::res://Assets/GUI/fondoMainPage.jpg<>uid://bt0bxqaajqeq2::::res://Assets/Audio/Of Far Different Nature - 8-Bit Hero Quest (CC-BY).ogg
-menuControles2.tscn::PackedScene::5498889432612929671::1741262140::0::1::::<><>::uid://cntyse6878fqc::::res://Assets/GUI/theme_gui.theme<>res://Scenes/menu_controles.gd<>uid://b7pdye1g31yb1::::res://Assets/GUI/artistic-pixel-art-hd-wallpaper-preview.jpg<>uid://bt0bxqaajqeq2::::res://Assets/Audio/Of Far Different Nature - 8-Bit Hero Quest (CC-BY).ogg
+finPartida.tscn::PackedScene::1458426778830539232::1741276704::0::1::::<><>::res://Scenes/fin_partida.gd<>uid://cntyse6878fqc::::res://Assets/GUI/theme_gui.theme<>uid://d3bsgy5mcugue::::res://Assets/Audio/goodresult-82807.mp3
+fin_partida.gd::GDScript::-1::1741276683::0::1::::<>CanvasLayer<>::
+gui.tscn::PackedScene::2448434286499647802::1741276705::0::1::::<><>::res://Assets/Scripts/gui.gd<>uid://cntyse6878fqc::::res://Assets/GUI/theme_gui.theme<>uid://dvlvx30fvwex2::::res://Assets/Audio/GameOver.ogg
+level2.tscn::PackedScene::1704191273791961260::1741277041::0::1::::<><>::res://Assets/Scripts/level.gd<>uid://ba5bmcmb1peso::::res://Scenes/gui.tscn<>uid://wvd8g62w37l2::::res://Scenes/camera.tscn<>uid://jurj157lldfy::::res://Assets/Environment/background_night.png<>uid://ibxmse8hstd6::::res://Assets/Environment/tilemap.png<>uid://hq7loigd8da2::::res://Assets/Environment/vegetation_grass_rock_trunk.png<>uid://ctof15vg0y1w5::::res://Assets/Environment/vegetation_grass_small.png<>uid://cn45l3mnm53ql::::res://Assets/Environment/vegetation_tree_palm.png<>uid://i7586lj6ve84::::res://Assets/Audio/Of Far Different Nature - EZDNB2 (CC-BY).ogg<>uid://bushha75kjen5::::res://Scenes/coin.tscn<>uid://gx260hy8f6wb::::res://Scenes/spike.tscn<>uid://hk8ixf3gcl0r::::res://Scenes/enemy.tscn<>uid://dscskf7pnqab::::res://Scenes/player.tscn<>uid://56o7u86tqjw0::::res://Scenes/coin2.tscn<>uid://gyku1epqbflt::::res://Scenes/bandera.tscn<>uid://v6vv37ym3nbv::::res://Scenes/menuPause.tscn
+level.tscn::PackedScene::7147999071006798111::1741276705::0::1::::<><>::res://Assets/Scripts/level.gd<>uid://ba5bmcmb1peso::::res://Scenes/gui.tscn<>uid://wvd8g62w37l2::::res://Scenes/camera.tscn<>uid://c24pbo6du8q2h::::res://Assets/Environment/background.png<>uid://ibxmse8hstd6::::res://Assets/Environment/tilemap.png<>uid://hq7loigd8da2::::res://Assets/Environment/vegetation_grass_rock_trunk.png<>uid://ctof15vg0y1w5::::res://Assets/Environment/vegetation_grass_small.png<>uid://cn45l3mnm53ql::::res://Assets/Environment/vegetation_tree_palm.png<>uid://dscskf7pnqab::::res://Scenes/player.tscn<>uid://bushha75kjen5::::res://Scenes/coin.tscn<>uid://gx260hy8f6wb::::res://Scenes/spike.tscn<>uid://i7586lj6ve84::::res://Assets/Audio/Of Far Different Nature - EZDNB2 (CC-BY).ogg<>uid://hk8ixf3gcl0r::::res://Scenes/enemy.tscn<>uid://gyku1epqbflt::::res://Scenes/bandera.tscn<>uid://v6vv37ym3nbv::::res://Scenes/menuPause.tscn
+menu.tscn::PackedScene::317128783326061467::1741276705::0::1::::<><>::uid://cntyse6878fqc::::res://Assets/GUI/theme_gui.theme<>res://Assets/Scripts/menu.gd<>uid://diis28c4h48o8::::res://Assets/GUI/fondoMainPage.jpg<>uid://bt0bxqaajqeq2::::res://Assets/Audio/Of Far Different Nature - 8-Bit Hero Quest (CC-BY).ogg
+menuControles2.tscn::PackedScene::5498889432612929671::1741276705::0::1::::<><>::uid://cntyse6878fqc::::res://Assets/GUI/theme_gui.theme<>res://Scenes/menu_controles.gd<>uid://b7pdye1g31yb1::::res://Assets/GUI/artistic-pixel-art-hd-wallpaper-preview.jpg<>uid://bt0bxqaajqeq2::::res://Assets/Audio/Of Far Different Nature - 8-Bit Hero Quest (CC-BY).ogg
 menuPause.tscn::PackedScene::1539275506489778827::1741258985::0::1::::<><>::uid://cntyse6878fqc::::res://Assets/GUI/theme_gui.theme<>res://Assets/Scripts/menu_pause.gd
 menu_controles.gd::GDScript::-1::1740347534::0::1::::<>Control<>::
-player.tscn::PackedScene::247879443195025753::1741262140::0::1::::<><>::res://Assets/Scripts/player.gd<>uid://dsy8dyk26cdk2::::res://Assets/Characters/Player/character_berie_death.png<>uid://dchs1wwjk3s52::::res://Assets/Characters/Player/character_berie_fall.png<>uid://d5181v24t4h5::::res://Assets/Characters/Player/character_berie_idle.png<>uid://doqttrg7uvmp4::::res://Assets/Characters/Player/character_berie_run.png<>uid://c0waujs41bg33::::res://Assets/Characters/Player/character_berie_jump.png<>uid://fi4hnkneivx3::::res://Assets/Audio/Jump.ogg<>uid://0k3i7g5s3n6g::::res://Assets/Audio/Hit.ogg
-spike.tscn::PackedScene::470309793619482337::1741262140::0::1::::<><>::res://Assets/Scripts/spike.gd<>uid://deadh1kjjc3ad::::res://Assets/Environment/trap_spike.png
+player.tscn::PackedScene::247879443195025753::1741276705::0::1::::<><>::res://Assets/Scripts/player.gd<>uid://dsy8dyk26cdk2::::res://Assets/Characters/Player/character_berie_death.png<>uid://dchs1wwjk3s52::::res://Assets/Characters/Player/character_berie_fall.png<>uid://d5181v24t4h5::::res://Assets/Characters/Player/character_berie_idle.png<>uid://doqttrg7uvmp4::::res://Assets/Characters/Player/character_berie_run.png<>uid://c0waujs41bg33::::res://Assets/Characters/Player/character_berie_jump.png<>uid://fi4hnkneivx3::::res://Assets/Audio/Jump.ogg<>uid://0k3i7g5s3n6g::::res://Assets/Audio/Hit.ogg
+spike.tscn::PackedScene::470309793619482337::1741276705::0::1::::<><>::res://Assets/Scripts/spike.gd<>uid://deadh1kjjc3ad::::res://Assets/Environment/trap_spike.png

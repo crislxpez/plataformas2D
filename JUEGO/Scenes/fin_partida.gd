@@ -20,3 +20,5 @@ func _deferred_change_scene():
 
 func _on_ready() -> void:
 	$GameOver/Container/Buttons/Restart.grab_focus()
+	$GameOver/Sound.play()
+	
