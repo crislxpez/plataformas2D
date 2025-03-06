@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Plataformas2D"
-config/description="Tutorial número 3 de la serie Hagamos Videojuegos, del canal de Leedeo Studio."
+config/description="Juego plataformas ^^"
 run/main_scene="res://Scenes/menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 run/max_fps=60
